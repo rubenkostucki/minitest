@@ -33,6 +33,7 @@ DEPENDENCIES
   ansi
   guard
   guard-minitest
+  pry
   rb-fsevent (~> 0.9.1)
   terminal-notifier-guard
   turn
