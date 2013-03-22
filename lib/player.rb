@@ -14,6 +14,11 @@ class Player
 
 	def buy_land(land)
 		@lands << land
+		decrease_balance(land.view_value_for_purchase)
+	end
+
+	def decrease_balance(value_for_purchase)
+		@balance = @balance - value_for_purchase
 	end
 
 	def pay_rent(rent_price)
@@ -21,7 +26,7 @@ class Player
 	end
 
 	def receive_rent(rent_price)
-		@balance + rent_price
+		@balance = @balance + rent_price
 	end
 
 	def view_lands

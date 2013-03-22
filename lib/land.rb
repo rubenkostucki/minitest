@@ -12,7 +12,7 @@ class Land < Tile
 	end
 
 	def available?
-		@available 
+		@available
 	end
 
 	def sell_to_player
@@ -26,5 +26,9 @@ class Land < Tile
 	# def to_s
 	# 	"#{@name}, #{@value_for_purchase}, #{@rent_price}"
 	# end
-	
+
+	def view_value_for_purchase
+		@value_for_purchase
+	end
+
 end
