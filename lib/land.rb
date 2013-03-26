@@ -23,9 +23,9 @@ class Land < Tile
 		@rent_price
 	end
 
-	# def to_s
-	# 	"#{@name}, #{@value_for_purchase}, #{@rent_price}"
-	# end
+	def to_s
+		"#{@name}, #{@value_for_purchase}, #{@rent_price}"
+	end
 
 	def view_value_for_purchase
 		@value_for_purchase

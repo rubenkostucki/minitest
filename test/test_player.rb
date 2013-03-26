@@ -11,8 +11,8 @@ class TestPlayer < MiniTest::Unit::TestCase
 		assert_equal 0, player1.view_lands.count #checking @lands array is empty
 
 		land1 = Land.new("Brussels", 1000, 50) #instantiation of the land class with the right arguments
-		player1.buy_land(land1) #call the buy land method on the player object with the land1 argument
-
+		player1].buy_land(land1) #call the buy land method on the player object with the land1 argument
+[[]]
 		assert_equal 1, player1.view_lands.count #now checking that @land array is NOT empty and got 1 item in it
 
 	end
